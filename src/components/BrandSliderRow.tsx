@@ -28,8 +28,8 @@ const BrandSliderRow = () => {
             </div>
 
             <div className="buttons">
-                <img id={'prev'} src={'/img/icons/slider-prev.png'}/>
-                <img id={'next'} src={'/img/icons/slider-next.png'}/>
+                <img className={'prev'} src={'/img/icons/slider-prev.png'}/>
+                <img className={'next'} src={'/img/icons/slider-next.png'}/>
             </div>
         </div>
     );

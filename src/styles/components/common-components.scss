@@ -1,0 +1,116 @@
+.custom-title-h2{
+  width: 100%;
+  text-align: left;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  @include respond-below(sm){
+    text-align: center;
+  }
+
+}
+.custom-title-h5{
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: -20px;
+  text-transform: uppercase;
+  color: #ba905e;
+  @include respond-below(sm){
+    text-align: center;
+  }
+
+}
+.custom-paragraph{
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  @include respond-below(sm){
+    text-align: center;
+  }
+
+}
+
+.custom-quote{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  >.title{
+    flex: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    &:after{
+      flex:0 auto;
+      content: '';
+      width: 150px;
+      height: 1px;
+      background-color: #ba905e;
+    }
+
+    >p{
+      position: relative;
+      font-size: 22px;
+      line-height: 30px;
+      color: #ba905e;
+      padding-right: 30px;
+      &:after{
+        position: absolute;
+        top:50%;
+        right: 0;
+        flex:0 auto;
+        content: '';
+        width: 6px;
+        height: 6px;
+        border: 1px solid #ba905e;
+        transform: translateY(-50%) rotate(45deg);
+      }
+    }
+  }
+
+  >.content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    >.left{
+      flex: 0 auto;
+      width: 60px;
+      box-sizing: border-box;
+      font-size: 60px;
+      color:#ba905e;
+    }
+    >.right{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      >p{
+        font-size: 16px;
+        line-height: 26px;
+      }
+      >.name{
+        margin-top: 30px;
+        color: #a09f9f;
+      }
+    }
+
+  }
+
+}

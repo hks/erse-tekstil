@@ -1,4 +1,5 @@
 @import "reset";
+@import "responsive";
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap');
 
@@ -13,14 +14,92 @@ html,body, #__next{
 @mixin boxedWidth(){
   position: relative;
   width: 100%;
-  padding-left: calc(50% - 750px);
-  padding-right: calc(50% - 750px);
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   box-sizing: border-box;
 }
 
+.elementor-separator{
+  width: 100%;
+}
+
+.elementor-boxed-row{
+  @include boxedWidth();
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  &.revert{
+    flex-direction: row-reverse;
+  }
+
+  @include respond-below(sm){
+    flex-direction: column;
+    &.revert{
+      flex-direction: column;
+    }
+  }
+
+  >.separator{
+    position: relative;
+    flex: 0 auto;
+    width: 160px;
+
+    @include respond-below(sm){
+      width: 100%;
+      height: 60px;
+    }
+  }
+  >.column{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    >img{
+      flex: 0 auto;
+      width: 100%;
+    }
+
+  }
+
+  &.full-height{
+    width: 100%;
+    max-width: unset;
+    padding: 0;
+    height: 100vh;
+    align-items: stretch;
+    @include respond-below(sm){
+      height: unset;
+    }
+    >.column{
+      box-sizing: border-box;
+      padding: 0 90px;
+      @include respond-below(sm){
+        flex: 0 auto;
+        padding: 60px 30px;
+        &.image{
+          height: 80vh;
+        }
+      }
+      background: no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+}
+
+
 @import "./components/header";
 @import "./components/footer";
+@import "./components/common-components";
 @import "./components/sub-hero";
 @import "./components/services-row";
 @import "./components/brand-slider";
 @import "./components/social-row";
+@import "./components/gallery-grid";
