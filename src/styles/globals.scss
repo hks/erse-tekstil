@@ -1,0 +1,26 @@
+@import "reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap');
+
+html,body, #__next{
+  font-family: 'Red Hat Text', sans-serif;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@mixin boxedWidth(){
+  position: relative;
+  width: 100%;
+  padding-left: calc(50% - 750px);
+  padding-right: calc(50% - 750px);
+  box-sizing: border-box;
+}
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/sub-hero";
+@import "./components/services-row";
+@import "./components/brand-slider";
+@import "./components/social-row";
