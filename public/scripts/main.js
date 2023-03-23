@@ -75,7 +75,7 @@ jQuery(document).ready(function (){
                 elements.removeClass('active');
                 bulletElements.removeClass('active');
                 jQuery(elements[current + 1]).addClass('active');
-                // jQuery(bulletElements[current + 1]).addClass('active');
+                jQuery(bulletElements[current + 1]).addClass('active');
             }else {
                 elements.removeClass('active');
                 bulletElements.removeClass('active');
