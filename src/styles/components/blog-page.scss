@@ -9,6 +9,10 @@
   margin-top: 100px;
   margin-bottom: 100px;
 
+  @include respond-below(sm){
+    flex-direction: column;
+  }
+
   > .content {
     flex: 9;
     position: relative;
@@ -16,6 +20,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+
+    @include respond-below(sm){
+      flex: 0 auto;
+      width: 100%;
+    }
 
     > .separator {
       flex: 0 auto;
@@ -89,16 +98,27 @@
 
   > .separator {
     flex: 1;
+    @include respond-below(sm){
+      flex: 0 auto;
+      width: 100%;
+    }
   }
 
   > .side-bar {
     flex: 5;
     box-sizing: border-box;
     background-color: #faf8f8;
+    @include respond-below(sm){
+      flex: 0 auto;
+      width: 100%;
+    }
 
     > .section {
       padding: 100px;
       border-bottom: 1px solid #e5d1b8;
+      @include respond-below(sm){
+        padding: 50px;
+      }
 
       &:last-child {
         border-bottom: none;
