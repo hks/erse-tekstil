@@ -3,7 +3,7 @@ import CustomParagraph from "@/components/common/CustomParagraph";
 
 const ContactForm = ()=>{
     return(
-        <div class={'contact-form-container'}>
+        <div className={'contact-form-container'}>
 
             <CustomTitle textAlign={'center'}>
                 BİZİMLE İLETİŞİME GEÇİN

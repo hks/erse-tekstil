@@ -3,7 +3,7 @@ import CustomParagraph from "@/components/common/CustomParagraph";
 
 const ContactInfo = ()=>{
     return(
-        <div class={'contact-info-container'}>
+        <div className={'contact-info-container'}>
 
             <CustomTitle>
                 İletişim Bilgileri
