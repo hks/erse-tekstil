@@ -20,6 +20,19 @@ jQuery(document).ready(function (){
         checkStickyMenu();
     });
 
+
+
+    let landingSliderWork = true;
+    setTimeout(nextLandingSlider, 5000);
+    function nextLandingSlider(){
+        if(landingSliderWork && jQuery('.header.landing .slider')){
+            jQuery('.header.landing .slider .buttons img.next').click();
+            setTimeout(nextLandingSlider, 5000);
+        }else{
+            landingSliderWork = false;
+        }
+    }
+
     jQuery('.header.landing .slider .buttons img').click(function (){
         let isNext = true;
         if(jQuery(this).hasClass('prev')){
@@ -54,6 +67,16 @@ jQuery(document).ready(function (){
 
     });
 
+    let brandSliderWork = true;
+    setTimeout(nextBrandSlider, 2000);
+    function nextBrandSlider(){
+        if(brandSliderWork && jQuery('.brand-slider-row')){
+            jQuery('.brand-slider-row .buttons img.next').click();
+            setTimeout(nextBrandSlider, 2000);
+        }else{
+            brandSliderWork = false;
+        }
+    }
 
     jQuery('.brand-slider-row .buttons img').click(function (){
         let isNext = true;
