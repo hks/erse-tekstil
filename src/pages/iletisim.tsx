@@ -11,6 +11,9 @@ import CustomParagraph from "@/components/common/CustomParagraph";
 import CustomQuote from "@/components/common/CustomQuote";
 import GalleryGrid from "@/components/GalleryGrid";
 import CustomSubTitle from "@/components/common/CustomSubTitle";
+import GoogleMaps from "@/components/GoogleMaps";
+import ContactInfo from "@/components/ContactInfo";
+import ContactForm from "@/components/ContactForm";
 
 export default function Brand() {
     return (
@@ -25,7 +28,31 @@ export default function Brand() {
 
 
 
+            <div className="elementor-separator" style={{height:'130px'}}></div>
+
+            <div className="elementor-boxed-row">
+
+                <div className="column">
+                    <GoogleMaps/>
+                </div>
+                <div className="separator">
+                </div>
+                <div className="column">
+                    <ContactInfo/>
+                </div>
+
+            </div>
+
+            <div className="elementor-separator" style={{height:'50px'}}></div>
+
             <SocialRow/>
+
+            <div className="elementor-separator" style={{height:'50px'}}></div>
+
+            <ContactForm/>
+
+            <div className="elementor-separator" style={{height:'130px'}}></div>
+
             <Footer/>
             <PartialFoot/>
         </>

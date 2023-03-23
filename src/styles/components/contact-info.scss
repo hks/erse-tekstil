@@ -1,0 +1,39 @@
+.contact-info-container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  >a.info-row{
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  >.info-row{
+    flex: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    >.icon{
+      flex: 0 auto;
+      width: 50px;
+      height: 50px;
+      margin-right: 30px;
+    }
+    >p{
+      flex: 1;
+      color: #7d7d7d;
+
+    }
+
+  }
+
+}

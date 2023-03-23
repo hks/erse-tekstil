@@ -1,7 +1,7 @@
 @import "reset";
 @import "responsive";
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@100;300;400;500;600;700&display=swap');
 
 html,body, #__next{
   font-family: 'Red Hat Text', sans-serif;
@@ -9,6 +9,10 @@ html,body, #__next{
   box-sizing: border-box;
   width: 100vw;
   overflow-x: hidden;
+}
+
+a,div,span,h1,h2,h3,h4,h5,h6,p,li,ul,ol,button,input,textarea{
+  font-family: 'Red Hat Text', sans-serif;
 }
 
 @mixin boxedWidth(){
@@ -26,6 +30,7 @@ html,body, #__next{
 }
 
 .elementor-boxed-row{
+  position: relative;
   @include boxedWidth();
   display: flex;
   flex-direction: row;
@@ -60,6 +65,9 @@ html,body, #__next{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include respond-below(sm){
+      width: 100%;
+    }
 
     >img{
       flex: 0 auto;
@@ -103,3 +111,6 @@ html,body, #__next{
 @import "./components/brand-slider";
 @import "./components/social-row";
 @import "./components/gallery-grid";
+@import "./components/contact-form";
+@import "./components/contact-info";
+@import "./components/blog-page";

@@ -21,19 +21,19 @@ const SubHero = ()=>{
                 </p>
 
                 <div className="buttons">
-                    <a href={'/kadin-giyim'} className="button">
+                    <a href={'/giyim'} className="button">
                         <img src={'/img/icons/service-icon-men.jpg'}/>
                         <span>
                             Kadın Giyim
                         </span>
                     </a>
-                    <a href={'/erkek-giyim'} className="button">
+                    <a href={'/giyim'} className="button">
                         <img src={'/img/icons/service-icon-women.jpg'}/>
                         <span>
                             Erkek Giyim
                         </span>
                     </a>
-                    <a href={'/cocuk-giyim'} className="button">
+                    <a href={'/giyim'} className="button">
                         <img src={'/img/icons/service-icon-kids.jpg'}/>
                         <span>
                             Çocuk Giyim
