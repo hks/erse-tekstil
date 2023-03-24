@@ -26,6 +26,8 @@ const Header = ({
                             </div>
                             <div className={'image'} style={{backgroundImage:'url("/img/erse-landing-slider-2.jpg")'}}>
                             </div>
+                            <div className={'image'} style={{backgroundImage:'url("/img/erse-landing-slider-3.jpg")'}}>
+                            </div>
                             <div className="overlay"></div>
                             <div className="buttons">
                                 <img className={'prev'} src={'/img/icons/slider-prev.png'}/>
