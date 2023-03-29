@@ -20,7 +20,7 @@ export default function Brand() {
                 currentMenuItem={'/marka'}
                 backgroundImage={'/img/erse-brand-banner.jpg'}
                 title={'Marka'}
-                subTitle={'BABOKAH'}
+                subTitle={<img src={'/img/brands/baokah-logo.png'}/>}
             />
 
             <div className="elementor-separator" style={{height:'130px'}}></div>

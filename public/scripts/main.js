@@ -23,11 +23,11 @@ jQuery(document).ready(function (){
 
 
     let landingSliderWork = true;
-    setTimeout(nextLandingSlider, 5000);
+    setTimeout(nextLandingSlider, 7000);
     function nextLandingSlider(){
         if(landingSliderWork && jQuery('.header.landing .slider')){
             jQuery('.header.landing .slider .buttons img.next').click();
-            setTimeout(nextLandingSlider, 5000);
+            setTimeout(nextLandingSlider, 7000);
         }else{
             landingSliderWork = false;
         }

@@ -5,7 +5,7 @@ type IProps = {
     currentMenuItem?: string;
     backgroundImage?: string;
     title?: string;
-    subTitle?: string;
+    subTitle?: string|React.ReactNode;
 }
 
 const Header = ({
@@ -47,9 +47,6 @@ const Header = ({
                 <div className="content">
                     <div className="boxed top">
                         <div className="column">
-                            <span>
-                                Takip Et:
-                            </span>
                             <a href={'#'} className="social-link">
                                 <img src={'/img/icons/linkedin.png'}/>
                             </a>
@@ -127,9 +124,6 @@ const Header = ({
                     })}
                 </ul>
                 <div className="social">
-                            <span>
-                                Takip Et:
-                            </span>
                     <a href={'#'} className="social-link">
                         <img src={'/img/icons/linkedin.png'}/>
                     </a>

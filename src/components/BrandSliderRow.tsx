@@ -2,8 +2,8 @@ import BrandsElements from "@/constants/BrandsElements";
 
 const BrandSliderRow = () => {
     return (
-        <div className={'brand-slider-row'} style={{backgroundImage:'url("/img/brand-slider-background.jpg")'}}>
-            <div className="overlay"></div>
+        <div className={'brand-slider-row'}>
+            {/*<div className="overlay"></div>*/}
 
             <div className="slider">
                 {BrandsElements.map((element, index) => {
@@ -28,8 +28,8 @@ const BrandSliderRow = () => {
             </div>
 
             <div className="buttons">
-                <img className={'prev'} src={'/img/icons/slider-prev.png'}/>
-                <img className={'next'} src={'/img/icons/slider-next.png'}/>
+                <img className={'prev'} src={'/img/icons/slider-prev-color.png'}/>
+                <img className={'next'} src={'/img/icons/slider-next-color.png'}/>
             </div>
         </div>
     );

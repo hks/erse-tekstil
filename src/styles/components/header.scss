@@ -34,7 +34,7 @@ header{
         background: no-repeat center center;
         background-size: cover;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 1s ease;
         &.active{
           opacity: 1;
         }
@@ -251,6 +251,13 @@ header{
       margin-top: 30px;
       @include respond-below(sm){
         font-size: 50px;
+      }
+      >img{
+        width: 100%;
+        max-width: 350px;
+        @include respond-below(sm){
+          max-width: 270px;
+        }
       }
     }
 

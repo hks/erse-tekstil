@@ -20,7 +20,7 @@ export default function Brand() {
                 isLandingPage={false}
                 currentMenuItem={'/giyim'}
                 backgroundImage={'/img/erse-textile-banner.jpg'}
-                title={'Giyim'}
+                title={''}
             />
 
             <div className="elementor-boxed-row full-height">

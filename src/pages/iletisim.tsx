@@ -38,15 +38,13 @@ export default function Brand() {
 
             </div>
 
-            <div className="elementor-separator" style={{height:'50px'}}></div>
+            <div className="elementor-separator" style={{height:'100px'}}></div>
+
+            <ContactForm/>
 
             <SocialRow/>
 
             <div className="elementor-separator" style={{height:'50px'}}></div>
-
-            <ContactForm/>
-
-            <div className="elementor-separator" style={{height:'130px'}}></div>
 
             <Footer/>
             <PartialFoot/>

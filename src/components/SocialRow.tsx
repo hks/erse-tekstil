@@ -8,19 +8,19 @@ const SocialRow = ()=>{
 
                 <a className="social-button" href={'#'} target={'_blank'}>
                     <div className={'icon'}>
-                        <img src={'/img/icons/social-facebook.png'}/>
+                        <img src={'/img/icons/social-youtube.png'}/>
                     </div>
                     <span>
-                        Find us on Facebook
+                        Bizi Youtube'da takip edin
                     </span>
                 </a>
 
                 <a className="social-button" href={'#'} target={'_blank'}>
                     <div className={'icon'}>
-                        <img src={'/img/icons/social-twitter.png'}/>
+                        <img src={'/img/icons/social-linkedin.png'}/>
                     </div>
                     <span>
-                        Follow us on Twitter
+                        Bizi Linkedin'de bulun
                     </span>
                 </a>
 
@@ -29,7 +29,7 @@ const SocialRow = ()=>{
                         <img src={'/img/icons/social-instagram.png'}/>
                     </div>
                     <span>
-                        Follow us on Instagram
+                        Bizi Instagram'da takip edin
                     </span>
                 </a>
 
